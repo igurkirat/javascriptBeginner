@@ -3,12 +3,10 @@ let team1 = {
   location: 'london',
   titlesWon: 39,
 }
-console.log('---team 1 before changes in team 2---')
-console.log(team1)
 
-let team2 = Object.assign({}, team1)
+let team2 = Object.assign(team1)
 
-console.log('---team 2 before changes---')
+console.log('---team2 before changes---')
 console.log(team2)
 
 team2.name = 'Arsenal'
@@ -17,5 +15,5 @@ team2.titlesWon = 28
 console.log('---team 1 after changes in team 2---')
 console.log(team1)
 
-console.log('---team 2 after changes---')
+console.log('---team2 after changes---')
 console.log(team2)
